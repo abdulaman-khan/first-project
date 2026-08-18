@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Form</title>
+    </head>
+    <body style="background-color: #f9f6e8">
+        <form action="/Jan28 and June batch/FrontEnd/HTML/LoginPage.html">
+            <fieldset>
+                <legend>
+                    <strong>Student Details</strong>
+                </legend>
+                <fieldset style="margin: 25px 0" style="padding: 20px">
+                    <legend>
+                        <strong>Personal</strong>
+                    </legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="f_name">First Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="f_name" placeholder="First Name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="l_name">Last Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="l_name" placeholder="Last Name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="father_name">Father's Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="father_name" placeholder="Father's Name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="M_name">Mother's Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="M_name" placeholder="Mother's Name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="dob">DOB:</label>
+                            </td>
+                            <td>
+                                <input type="date" id="dob">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>
+                                <input
+                                    type="radio"
+                                    id="male"
+                                    value="male"
+                                    name="gender"
+                                >
+                                <label for="male">Male</label>
+                                <input
+                                    type="radio"
+                                    id="female"
+                                    value="female"
+                                    name="gender"
+                                >
+                                <label for="female">Female</label>
+                                <input
+                                    type="radio"
+                                    id="other"
+                                    value="other"
+                                    name="gender"
+                                >
+                                <label for="other">Others</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Blood Group:</td>
+                            <td>
+                                <select name="bloodGroup" id="bloodGroup" style="width: 170px;">
+                                    <option value="--choose--" hidden>--------choose Here--------</option>
+                                    <option value="A+">A+</option>
+                                    <option value="B+">B+</option>
+                                    <option value="B-">B-</option>
+                                    <option value="other">Others</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset style="margin: 25px 0" style="padding: 20px">
+                    <legend>
+                        <strong>Contact</strong>
+                    </legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="Mo">Mobile No:</label>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="10 digits" id="Mo">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="mail">Mail id:</label>
+                            </td>
+                            <td>
+                                <input type="mail" placeholder="sample@gmail.com" id="mail">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="add">Address:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="add" placeholder="House no. Street Name">
+                            </td>
+                            <tr>
+                                <td>
+                                    <input type="text" id="add" placeholder="Line 1">
+                                </td>
+                                <td>
+                                    <input type="text" id="add" placeholder="Line 2">
+                                </td>
+                            </tr>
+                        </tr>
+                        <tr>
+                            <td>Country:</td>
+                            <td>
+                                <select name="country" id="country" style="width: 170px;">
+                                    <option value="" hidden>--------choose Here--------</option>
+                                    <option value="India">India</option>
+                                    <option value="US">US</option>
+                                    <option value="Soudia Arabia">Soudia Arabia</option>
+                                    <option value="Sri Lanka">Sri Lanka</option>
+                                    <option value="other">Others</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>State:</td>
+                            <td>
+                                <select name="state" id="state" style="width: 170px;">
+                                    <option value="other" hidden>--------choose Here--------</option>
+                                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                    <option value="U.P.">U.P.</option>
+                                    <option value="karnataka">Karnataka</option>
+                                    <option value="kerala">kerala</option>
+                                    <option value="other">Others</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="pinCode">Pin Code:</label>
+                            </td>
+                            <td>
+                                <input type="pincode" id="pinCode" placeholder="pin code">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset style="margin: 25px 0" style="padding: 20px">
+                    <legend>
+                        <strong>Education</strong>
+                    </legend>
+                    <table>
+                        <tr>
+                            <td>Highest Degree:</td>
+                            <td>
+                                <select name="degree" id="degree" style="width: 170px;">
+                                    <option value="" hidden>--------choose Here--------</option>
+                                    <option value="B.tech">B.Tech</option>
+                                    <option value="B.C.A">B.C.A</option>
+                                    <option value="M.B.A.">M.B.A</option>
+                                    <option value="Bsc">Bsc</option>
+                                    <option value="M.tech">M.tech</option>
+                                    <option value="other">Others</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Stream:</td>
+                            <td>
+                                <input
+                                    type="radio"
+                                    id="Mech"
+                                    value="mech"
+                                    name="stream"
+                                >
+                                <label for="Mech">Mech</label>
+                                <input
+                                    type="radio"
+                                    id="Civil"
+                                    value="civil"
+                                    name="stream"
+                                >
+                                <label for="Civil">Civil</label>
+                                <input
+                                    type="radio"
+                                    id="cs"
+                                    value="cs"
+                                    name="stream"
+                                >
+                                <label for="cs">CS</label>
+                                <input
+                                    type="radio"
+                                    id="EC"
+                                    value="ec"
+                                    name="stream"
+                                >
+                                <label for="EC">EC</label>
+                                <input
+                                    type="radio"
+                                    id="it"
+                                    value="it"
+                                    name="stream"
+                                >
+                                <label for="it">IT</label>
+                                <input
+                                    type="radio"
+                                    id="eee"
+                                    value="eee"
+                                    name="stream"
+                                >
+                                <label for="eee">EEE</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="ifOther">If Other:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="ifOther" placeholder="others">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>YOP:</td>
+                            <td>
+                                <select name="yop" id="YOP" style="width: 170px;">
+                                    <option value="choose" selected disabled>--------choose Here--------</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="university">University:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="university" placeholder="University Name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="percentage">Percentage:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="Percentage" placeholder="%">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset style="margin: 25px 0" style="padding: 20px">
+                    <legend>
+                        <strong>Placement</strong>
+                    </legend>
+                    <table>
+                        <tr>
+                            <td>Skills:</td>
+                            <td>
+                                <input type="checkbox" name="skills" id="html">
+                                <label for="html">html</label>
+                                <input type="checkbox" name="skills" id="CSS">
+                                <label for="CSS">CSS</label>
+                                <input type="checkbox" name="skills" id="JS">
+                                <label for="JS">JS</label>
+                                <input type="checkbox" name="skills" id="ReactJS">
+                                <label for="ReactJS">ReactJS</label>
+                                <input type="checkbox" name="skills" id="ReactNative">
+                                <label for="ReactNative">ReactNative</label>
+                                <input type="checkbox" name="skills" id="NodeJS">
+                                <label for="NodeJS">NodeJS</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Domain:</td>
+                            <td>
+                                <input type="radio" name="domain" id="devops">
+                                <label for="devops">Devops</label>
+                                <input type="radio" name="domain" id="testing">
+                                <label for="testing">Testing</label>
+                                <input type="radio" name="domain" id="Dev">
+                                <label for="Dev">Dev</label>
+                                <input type="radio" name="domain" id="Support">
+                                <label for="Support">Support</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Place Of Preference:</td>
+                            <td>
+                                <input type="radio" name="place" id="banglore">
+                                <label for="banglore">Banglore</label>
+                                <input type="radio" name="place" id="Chennai">
+                                <label for="Chennai">Chennai</label>
+                                <input type="radio" name="place" id="Hyderabad">
+                                <label for="Hyderabad">Hyderabad</label>
+                                <input type="radio" name="place" id="Pune">
+                                <label for="Pune">Pune</label>
+                                <input type="radio" name="place" id="Delhi">
+                                <label for="Delhi">Delhi</label>
+                                <input type="radio" name="place" id="Pan India">
+                                <label for="Pan India">Pan India</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Expecting Salary:</td>
+                            <td>
+                                <input type="radio" name="Salary" id="Less Than 3 LPA">
+                                <label for="Less Than 3 LPA">Less Than 3 LPA</label>
+                                <input type="radio" name="Salary" id="3.6 LPA">
+                                <label for="3.6 LPA">3.6 LPA</label>
+                                <input type="radio" name="Salary" id="6-10 LPA">
+                                <label for="6-10 LPA">6-10 LPA</label>
+                                <input type="radio" name="Salary" id="More Than 10 LPA">
+                                <label for="More Than 10 LPA">More Than 10 LPA</label>
+                                <input type="radio" name="Salary" id="No Expectation">
+                                <label for="No Expectation">No Expectation</label>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset style="margin: 25px 0" style="padding: 20px">
+                    <legend>
+                        <strong>Create Account</strong>
+                    </legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="UserName">UserName:</label>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="UserName" id="UserName">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="password">Password:</label>
+                            </td>
+                            <td>
+                                <input type="password" id="password" placeholder="password">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="re-password">Re-Enter:</label>
+                            </td>
+                            <td>
+                                <input type="re-password" id="re-password" placeholder="re-enter">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="agree">
+                            <label for="agree">Agree Terms & Conditons</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Submit">
+                            <input type="submit" value="Reset">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="addData()">Add</button>
+    <hr />
+    <button onclick="removeData()">Remove Data</button>
+    <script>
+      <!-- Confirm() -->
+      let addData = function () {
+        let confirmation = confirm("Do you really want to add data");
+        console.log(confirmation);
+        if (confirmation) {
+          localStorage.setItem("Name", "Aman");
+          localStorage.setItem("Age", "23");
+          console.log("Data Added SuccessFul !")
+        } else {
+          console.log("Data Not Added");
+        }
+      };
+
+      <!-- Remove data -->
+      let removeData = function () {
+        let confirmation2 = confirm("Do you really want to delete the data");
+        console.log(confirmation2);
+        if (confirmation2) {
+          localStorage.removeItem("Name");
+          localStorage.removeItem("Age");
+          console.log("Data Removed Successful!")
+        } else {
+          console.log("Remove Not done");
+        }
+      };
+    </script>
+    
+    <!-- User Input -->
+     <!-- prompt() -->
+    <button onclick="acceptUserData()">Show</button>
+    <script>
+        function acceptUserData(){
+            let userInput=prompt("Enter the Username")
+            console.log("User Entered is",userInput)
+        }
+    </script>
+  </body>
+</html>
