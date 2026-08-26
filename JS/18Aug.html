@@ -15,9 +15,17 @@
         let confirmation = confirm("Do you really want to add data");
         console.log(confirmation);
         if (confirmation) {
-          localStorage.setItem("Name", "Aman");
-          localStorage.setItem("Age", "23");
-          console.log("Data Added SuccessFul !")
+          let userName=prompt("Enter Username:")
+          let userAge=prompt("Enter Age:")
+          // user input
+          if (userName !== null || userAge !== null) {
+            localStorage.setItem("Name", userName);
+            localStorage.setItem("Age", userAge);
+            console.log("Data Added Successfully!");
+          } else {
+            console.log("User cancelled the input.");
+          }
+
         } else {
           console.log("Data Not Added");
         }

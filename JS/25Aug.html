@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap-1">
+        <h1>PySpider | BTM | Bengalore</h1>
+        <h1>JSpider | BTM | Bengalore</h1>
+        <h1>QSpider | BTM | Bengalore</h1>
+        <h1>ProSpider | BTM | Bengalore</h1>
+    </div>
+    <button onclick="getData()">Fetch</button>
+    <script>
+        function getData(){
+            let headEle = document.querySelector(".wrap-1>h1")
+            console.log(headEle)
+        }
+    </script>
+    <hr>
+
+    <div class="wrap-2">
+        <h1>PySpider | BTM | Bengalore</h1>
+        <h1>JSpider | BTM | Bengalore</h1>
+        <h1>QSpider | BTM | Bengalore</h1>
+        <h1>ProSpider | BTM | Bengalore</h1>
+    </div>
+    <button onclick="getData1()" on>Fetch</button>
+    <script>
+        function getData1(){
+            let headEle1=document.querySelectorAll(".wrap-2>h1")
+            for (let i =0; i<headEle1.length;i++){
+                console.log(headEle1[i].textContent)
+            }
+            
+        }
+    </script>
+</body>
+</html>
+
+<!-- Note when javascript is load on the browser JS Start will reacting over a event and allows the execution. this process of allowing execution is known as event handling
+ 2. js handles the event (call the function) with the help of event handlers as follows
+ types of event handles : 1 mouse event: onclick,ondbclick, onfocus,onchange,oninput
+                          2 keyboard event: onkeyup,onkeydown
+                          3 form events: onsubmit, onblur, onfocus,onchange,oninput
+ -->

@@ -1,4 +1,4 @@
-// const prompt=require("prompt-sync")({sigint:true})
+2// const prompt=require("prompt-sync")({sigint:true})
 
 // 3. arrow function
 // let a=+prompt("Enter the Number:")

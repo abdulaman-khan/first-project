@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- getElementById() => textContent , Value , src , innerHtml -->
+    <h1 id="head-1">PySpider | BTM | Bengalore </h1>
+    <button onclick="showContent()">Show</button>
+    <button onclick="changeContent()">Change</button>
+    <button onclick="previousContent()">Previous</button>
+    <script>
+        let headEle=document.getElementById("head-1")
+        function showContent(){
+            // fetching the element by the method getElementById()
+            console.log(headEle)
+
+            // fetching the content of the h1 element 
+
+            let headContent = headEle.textContent
+            console.log("Content of heading1 : ",headContent)
+
+            // update the value of head element 
+            
+            <!-- headEle.textContent=" Hi Abdul How are You !" -->
+            <!-- console.log(headContent) -->
+        }
+
+        // change content
+
+        function changeContent(){
+            // manipulate the content
+            headEle.textContent="Welcome to DOM!"
+        }
+
+        // previous
+
+        function previousContent(){
+            headEle.textContent=headContent
+        }
+    </script>
+</body>
+</html>
