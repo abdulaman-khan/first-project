@@ -10,4 +10,4 @@ for (let i = 0; i < arr.length - 1; i++) {
     }
 }
 
-console.log("Sorted Array:", arr);
+console.log("Sorted Array:", arr);.
